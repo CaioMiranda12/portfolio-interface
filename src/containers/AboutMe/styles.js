@@ -12,6 +12,10 @@ export const ContainerMain = styled.div`
   img {
     width: 500px;
     height: 500px;
+
+    @media (max-width: 768px) {
+      width: 0px;
+    }
   }
 
   div {
@@ -34,5 +38,19 @@ export const ContainerMain = styled.div`
       font-weight: 700;
       line-height: 120%; /* 76.8px */
     }
+
+    p {
+      @media (max-width: 768px) {
+        width: 350px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    width: 0;
+    padding: 20px;
   }
 `

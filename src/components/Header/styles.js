@@ -10,11 +10,19 @@ export const ContainerMain = styled.div`
   padding-right: 30px;
   background: #fff;
   box-shadow: 0px 5.333px 80px 0px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    padding-right: 10px;
+  }
 `
 
 export const HeaderLinks = styled.div`
   display: flex;
   gap: 40px;
+
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
 `
 
 export const PageLink = styled.a`
@@ -26,6 +34,10 @@ export const PageLink = styled.a`
   font-weight: ${props => (props.isActive ? 'bold' : 400)};
   line-height: 150%;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `
 
 export const SocialLinks = styled.div`
@@ -36,6 +48,10 @@ export const SocialLinks = styled.div`
   img {
     width: 40px;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      width: 30px;
+    }
   }
 `
 
@@ -52,4 +68,8 @@ export const ContactButton = styled.a`
   border: 1.333px solid var(--Primary, #5e3bee);
   padding: 8px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 3px;
+  }
 `

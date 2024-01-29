@@ -42,17 +42,6 @@ export function Projetos() {
               <a
                 target="_blank"
                 href="https://www.linkedin.com/feed/update/urn:li:activity:7142666715657637890/"
-                style={{
-                  backgroundColor: 'green',
-                  color: '#fff',
-                  fontSize: 20,
-                  padding: 10,
-                  textAlign: 'center',
-                  borderRadius: 5,
-                  width: 80,
-                  cursor: 'pointer',
-                  textDecoration: 'none'
-                }}
                 rel="noreferrer"
               >
                 Abrir
@@ -70,7 +59,7 @@ export function Projetos() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  DevHamburgueria
+                  DevBurger2
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Site completo de Hamburgueria, com sistema de login, pedidos e
@@ -82,17 +71,6 @@ export function Projetos() {
               <a
                 target="_blank"
                 href="https://caiomiranda12.github.io/DevHamburgueria/"
-                style={{
-                  backgroundColor: 'green',
-                  color: '#fff',
-                  fontSize: 20,
-                  padding: 10,
-                  textAlign: 'center',
-                  borderRadius: 5,
-                  width: 80,
-                  cursor: 'pointer',
-                  textDecoration: 'none'
-                }}
                 rel="noreferrer"
               >
                 Abrir
@@ -110,7 +88,7 @@ export function Projetos() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Previsão de Tempo
+                  Clima
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Site completo de Hamburgueria, com sistema de login, pedidos e
@@ -122,17 +100,6 @@ export function Projetos() {
               <a
                 target="_blank"
                 href="https://caiomiranda12.github.io/PrevisaoDoTempo/"
-                style={{
-                  backgroundColor: 'green',
-                  color: '#fff',
-                  fontSize: 20,
-                  padding: 10,
-                  textAlign: 'center',
-                  borderRadius: 5,
-                  width: 80,
-                  cursor: 'pointer',
-                  textDecoration: 'none'
-                }}
                 rel="noreferrer"
               >
                 Abrir

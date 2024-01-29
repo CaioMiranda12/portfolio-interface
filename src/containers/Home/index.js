@@ -11,13 +11,14 @@ import {
   ContainerMain,
   InfoContainer,
   ContainerSkills,
-  SectionSkiils
+  SectionSkiils,
+  ContainerAll
 } from './styles'
 
 export function Home() {
   const navigate = useNavigate()
   return (
-    <>
+    <ContainerAll>
       <ContainerMain>
         <InfoContainer>
           <div>
@@ -63,6 +64,6 @@ export function Home() {
           </div>
         </ContainerSkills>
       </SectionSkiils>
-    </>
+    </ContainerAll>
   )
 }

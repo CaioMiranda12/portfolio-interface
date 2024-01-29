@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+export const ContainerAll = styled.div``
+
 export const ContainerMain = styled.div`
   max-width: 100vw;
   height: 64vh;
@@ -7,6 +9,12 @@ export const ContainerMain = styled.div`
   justify-content: center;
   align-items: center;
   background: var(--BG-Shade, #f5fcff);
+
+  @media (max-width: 768px) {
+    justify-content: start;
+    padding: 20px;
+    height: 50vh;
+  }
 `
 
 export const InfoContainer = styled.div`
@@ -16,6 +24,11 @@ export const InfoContainer = styled.div`
   img {
     width: 500px;
     height: 500px;
+
+    @media (max-width: 768px) {
+      width: 130px;
+      height: 200px;
+    }
   }
 
   div {
@@ -26,6 +39,10 @@ export const InfoContainer = styled.div`
       font-style: normal;
       font-weight: 600;
       line-height: 150%; /* 32px */
+
+      @media (max-width: 768px) {
+        font-size: 15px;
+      }
     }
 
     h1 {
@@ -35,6 +52,10 @@ export const InfoContainer = styled.div`
       font-style: normal;
       font-weight: 700;
       line-height: 80px;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
     }
 
     p {
@@ -46,6 +67,11 @@ export const InfoContainer = styled.div`
       line-height: 35px;
       width: 300px;
       margin-bottom: 30px;
+
+      @media (max-width: 768px) {
+        width: 210px;
+        font-size: 20px;
+      }
     }
 
     a {
@@ -69,6 +95,10 @@ export const InfoContainer = styled.div`
         opacity: 0.6;
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    gap: 20px;
   }
 `
 
@@ -98,6 +128,14 @@ export const SectionSkiils = styled.div`
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 76.8px */
+
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 40vh;
   }
 `
 
@@ -119,10 +157,19 @@ export const ContainerSkills = styled.div`
 
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
+
+    @media (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   img:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    gap: 15px;
   }
 `
