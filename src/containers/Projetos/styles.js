@@ -1,9 +1,27 @@
 import styled from 'styled-components'
 
 export const ContainerMain = styled.div`
+  /* border-top: 1px solid #000; */
   padding: 20px;
   display: flex;
   flex-direction: column;
+
+  background-image: radial-gradient(
+    circle at 50% -20.71%,
+    #7b7b6f 0,
+    #787666 8.33%,
+    #75705d 16.67%,
+    #736953 25%,
+    #706249 33.33%,
+    #6e593e 41.67%,
+    #6b5033 50%,
+    #684629 58.33%,
+    #663d22 66.67%,
+    #65341c 75%,
+    #632b18 83.33%,
+    #622217 91.67%,
+    #601817 100%
+  );
 `
 
 export const InfoContainer = styled.div`
@@ -11,17 +29,15 @@ export const InfoContainer = styled.div`
   text-align: center;
 
   h3 {
-    color: var(--Heading-color, #282938);
-    font-family: Roboto;
-    font-size: 21.333px;
+    color: #f5a940;
+    font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 150%; /* 32px */
   }
 
   h1 {
-    color: var(--Heading-color, #282938);
-    font-family: Roboto;
+    color: #fff;
     font-size: 60px;
     font-style: normal;
     font-weight: 700;
@@ -32,53 +48,67 @@ export const InfoContainer = styled.div`
 export const ContainerProjects = styled.div`
   display: flex;
   justify-content: center;
-  gap: 50px;
-
-  .css-46bh2p-MuiCardContent-root {
-    @media (max-width: 768px) {
-      padding: 0px;
-    }
-  }
-
-  .css-r40f8v-MuiTypography-root {
-    @media (max-width: 768px) {
-      font-size: 0.75rem;
-    }
-  }
-
-  .css-h93ljk-MuiTypography-root {
-    @media (max-width: 768px) {
-      font-size: 1.2rem;
-    }
-  }
+  gap: 30px;
 
   img {
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
+    width: 100%;
+    height: 150px;
+  }
+`
 
-    @media (max-width: 768px) {
-      height: 120px;
-    }
+export const InfoProjectDiv = styled.div`
+  width: 400px;
+  height: 330px;
+  background-color: #f3c07f;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+
+  div {
+    padding: 5px;
   }
 
-  img:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-  a {
-    background-color: green;
-    color: #fff;
-    font-size: 20px;
-    padding: 10px;
+  h2 {
     text-align: center;
-    border-radius: 5px;
-    width: 80px;
-    cursor: pointer;
-    text-decoration: none;
   }
 
-  @media (max-width: 768px) {
-    gap: 15px;
+  p {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+`
+
+export const CardButtons = styled.div`
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    gap: 5px;
+  }
+
+  p {
+    background-color: #c5873e;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  button {
+    border: none;
+    font-size: 18px;
+    width: 90px;
+    border-radius: 30px;
+
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  button:active {
+    opacity: 0.6;
   }
 `

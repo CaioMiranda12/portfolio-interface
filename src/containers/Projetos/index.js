@@ -8,7 +8,13 @@ import React from 'react'
 import CodeBurger from '../../assets/codeburger.png'
 import DevHamburgueria from '../../assets/devhamburger.png'
 import Tempo from '../../assets/tempo.png'
-import { ContainerMain, InfoContainer, ContainerProjects } from './styles'
+import {
+  ContainerMain,
+  InfoContainer,
+  ContainerProjects,
+  InfoProjectDiv,
+  CardButtons
+} from './styles'
 
 export function Projetos() {
   return (
@@ -20,92 +26,71 @@ export function Projetos() {
         </InfoContainer>
 
         <ContainerProjects>
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="200"
-                image={CodeBurger}
-                alt="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  CodeBurger
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Site completo de Hamburgueria, com sistema de login, pedidos e
-                  carrinho, com API própria
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7142666715657637890/"
-                rel="noreferrer"
-              >
-                Abrir
-              </a>
-            </CardActions>
-          </Card>
+          <InfoProjectDiv>
+            <img src={CodeBurger} alt="codeburger-img" />
+            <div>
+              <h2>CodeBurger</h2>
+              <p>
+                Site completo de Hamburgueria, com sistema de login, pedidos e
+                carrinho, com API própria
+              </p>
+            </div>
 
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="200"
-                image={DevHamburgueria}
-                alt="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  DevBurger2
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Site completo de Hamburgueria, com sistema de login, pedidos e
-                  carrinho, com API própria
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <a
-                target="_blank"
-                href="https://caiomiranda12.github.io/DevHamburgueria/"
-                rel="noreferrer"
-              >
-                Abrir
-              </a>
-            </CardActions>
-          </Card>
+            <CardButtons>
+              <div>
+                <p>React</p>
+                <p>Node.js</p>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
 
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="200"
-                image={Tempo}
-                alt="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Clima
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Site completo de Hamburgueria, com sistema de login, pedidos e
-                  carrinho, com API própria
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <a
-                target="_blank"
-                href="https://caiomiranda12.github.io/PrevisaoDoTempo/"
-                rel="noreferrer"
-              >
-                Abrir
-              </a>
-            </CardActions>
-          </Card>
+              <button>Abrir</button>
+            </CardButtons>
+          </InfoProjectDiv>
+
+          <InfoProjectDiv>
+            <img src={CodeBurger} alt="codeburger-img" />
+            <div>
+              <h2>DevBurger2</h2>
+              <p>
+                Site completo de Hamburgueria, com sistema de login, pedidos e
+                carrinho, com API própria
+              </p>
+            </div>
+
+            <CardButtons>
+              <div>
+                <p>React</p>
+                <p>Node.js</p>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+
+              <button>Abrir</button>
+            </CardButtons>
+          </InfoProjectDiv>
+
+          <InfoProjectDiv>
+            <img src={CodeBurger} alt="codeburger-img" />
+            <div>
+              <h2>Previsão do Tempo</h2>
+              <p>
+                Site completo de Hamburgueria, com sistema de login, pedidos e
+                carrinho, com API própria
+              </p>
+            </div>
+
+            <CardButtons>
+              <div>
+                <p>React</p>
+                <p>Node.js</p>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+
+              <button>Abrir</button>
+            </CardButtons>
+          </InfoProjectDiv>
         </ContainerProjects>
       </ContainerMain>
     </div>

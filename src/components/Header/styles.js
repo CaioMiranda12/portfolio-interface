@@ -1,75 +1,47 @@
 import styled from 'styled-components'
 
 export const ContainerMain = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
   height: 8vh;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  button {
+    padding: 10px;
+    background: transparent;
+    color: #fff;
+    font-size: 23px;
+    border: none;
 
-  padding-right: 30px;
-  background: #fff;
-  box-shadow: 0px 5.333px 80px 0px rgba(0, 0, 0, 0.1);
+    span {
+      color: #f5a940;
+    }
+  }
 
-  @media (max-width: 768px) {
-    padding-right: 10px;
+  button:hover {
+    transition: 0.6s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.2);
   }
 `
 
 export const HeaderLinks = styled.div`
   display: flex;
-  gap: 40px;
+  gap: 30px;
 
-  @media (max-width: 768px) {
-    gap: 20px;
-  }
-`
-
-export const PageLink = styled.a`
-  color: ${props =>
-    props.isActive ? 'var(--Primary, #5E3BEE)' : 'var(--Body, #1c1e53)'};
-  font-family: Roboto;
-  font-size: 21.333px;
-  font-style: normal;
-  font-weight: ${props => (props.isActive ? 'bold' : 400)};
-  line-height: 150%;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
-`
-
-export const SocialLinks = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 15px;
-
-  img {
-    width: 40px;
+  a {
+    color: #e2e2e2;
+    font-size: 16px;
     cursor: pointer;
-
-    @media (max-width: 768px) {
-      width: 30px;
-    }
   }
-`
 
-export const ContactButton = styled.a`
-  color: var(--Primary, #5e3bee);
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 32px */
-  text-decoration: none;
-
-  border-radius: 5.333px;
-  border: 1.333px solid var(--Primary, #5e3bee);
-  padding: 8px;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    padding: 3px;
+  a:hover {
+    color: #f5a940;
+    transition: 0.3s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.1);
   }
 `

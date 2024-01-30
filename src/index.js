@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
+import Header from './components/Header'
+import { Home } from './containers'
 import MyRoutes from './routes/routes'
 import GlobalStyle from './styles/globalStyle'
 
@@ -9,6 +11,6 @@ root.render(
   <React.StrictMode>
     <GlobalStyle />
 
-    <MyRoutes />
+    <Home />
   </React.StrictMode>
 )

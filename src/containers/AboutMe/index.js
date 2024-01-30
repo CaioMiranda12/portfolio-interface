@@ -1,7 +1,8 @@
 import React from 'react'
 
 import CaioImg from '../../assets/me.jpg'
-import { ContainerMain } from './styles'
+import videoBg from '../../assets/videoBg.mp4'
+import { ContainerMain, ContainerText, DivAboutMe } from './styles'
 
 export function AboutMe() {
   return (
@@ -9,31 +10,31 @@ export function AboutMe() {
       <ContainerMain>
         <img src={CaioImg} alt="imagem-do-caio" />
 
-        <div>
+        <DivAboutMe>
           <h3>About</h3>
-          <h1>Sobre mim</h1>
-          <p>
-            Olá! Meu nome é Caio, um entusiasta da programação e um
-            desenvolvedor Full Stack dedicado. Encaro a busca dos meus objetivos
-            como uma missão pessoal e estou sempre disposto a superar desafios
-            com dedicação inabalável. Minha trajetória na área da programação
-            teve início no ano de 2022, quando ingressei no curso DevClub. Foi
-            nesse ambiente que cultivei minhas habilidades como programador,
-            alcançando um desenvolvimento notável. Ao longo da minha jornada,
-            adquiri proficiência em uma ampla gama de tecnologias, incluindo
-            HTML, CSS, JavaScript, React, Node, API REST, Postgres, MongoDB e
-            Sequelize. Essas competências me permitiram realizar uma série de
-            projetos significativos, que incluem o desenvolvimento de uma
-            plataforma de pedidos para uma hamburgueria, a criação de um site de
-            previsão do tempo e a implementação de um conversor de moedas em
-            tempo real, aproveitando o uso de uma API externa. Meu compromisso
-            com a constante evolução me motiva a continuar aprendendo e
-            aprimorando minhas habilidades como desenvolvedor Full Stack. Estou
-            ansioso para enfrentar novos desafios e expandir minha experiência
-            profissional. Gostaria de salientar que estou disponível para
-            projetos de freelance e aberto a discutir futuras colaborações.
-          </p>
-        </div>
+          <h1>Sobre</h1>
+
+          <ContainerText>
+            <p>
+              Me chamo Caio, sou um programador <span>Full-Stack,</span>
+              trabalhando principalmente com{' '}
+              <span>
+                React, Node.js, CSS, HTML, API REST, PostgresSQL e MongoDB
+              </span>
+              . Estudo desenvolvimento web no curso DevClub há mais de um ano. A
+              partir da integração de tais tecnologias, construí um site
+              completo de uma hamburgueria, com sistema de login, pedidos,
+              ofertas e carrinho, que inclusive também criei a API.
+            </p>
+
+            <p style={{ marginTop: 15 }}>
+              Tenho constante vontade de aprender cada vez mais da área de
+              programação, potencializando para o lado do desenvolvimento web.
+              Estou no terceiro semestre do curso de Ciência da Computação no
+              FBUni
+            </p>
+          </ContainerText>
+        </DivAboutMe>
       </ContainerMain>
     </div>
   )
