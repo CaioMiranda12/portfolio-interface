@@ -8,12 +8,12 @@ export function AboutMe() {
   return (
     <div>
       <ContainerMain>
-        <img src={CaioImg} alt="imagem-do-caio" />
-
-        <DivAboutMe>
+        <div>
           <h3>About</h3>
           <h1>Sobre</h1>
+        </div>
 
+        <DivAboutMe>
           <ContainerText>
             <p>
               Me chamo Caio, sou um programador <span>Full-Stack,</span>

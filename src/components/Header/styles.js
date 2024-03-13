@@ -5,17 +5,17 @@ export const ContainerMain = styled.div`
   justify-content: space-around;
   align-items: center;
   background-color: #000;
-  height: 8vh;
+  height: 10vh;
 
   button {
     padding: 10px;
     background: transparent;
     color: #fff;
-    font-size: 23px;
+    font-size: 26px;
     border: none;
 
     span {
-      color: #f5a940;
+      color: #8257e6;
     }
   }
 
@@ -33,12 +33,12 @@ export const HeaderLinks = styled.div`
 
   a {
     color: #e2e2e2;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
   }
 
   a:hover {
-    color: #f5a940;
+    color: #8257e6;
     transition: 0.3s;
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);

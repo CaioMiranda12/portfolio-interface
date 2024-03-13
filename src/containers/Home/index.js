@@ -1,51 +1,61 @@
 import React from 'react'
 
 import GithubImg from '../../assets/github-white.png'
+import imgPessoa from '../../assets/img-principal.svg'
 import LinkedinImg from '../../assets/linkedin-white.png'
-import Programmer from '../../assets/programmer.png'
-import videoBg from '../../assets/videoBg.mp4'
+import CaioImg from '../../assets/me.jpg'
 import Header from '../../components/Header'
-import { AboutMe } from '../AboutMe'
+import { Skills } from '../Habilidades'
 import { Projetos } from '../Projetos'
-import { ContainerMain, SocialLinks, ContainerAll, DivFirst } from './styles'
+import {
+  ContainerMain,
+  DivInfo,
+  ContainerName,
+  DivAbout,
+  ContainerButton,
+  ButtonCv,
+  ButtonContactMe
+} from './styles'
 
 export function Home() {
   return (
-    <ContainerAll>
-      <Header />
+    <ContainerMain>
+      <div>
+        <DivInfo>
+          <ContainerName>
+            <div>
+              <h2>Olá eu sou o</h2>
+              <h1>Caio Miranda :D</h1>
+              <p>Desenvolvedor Full-Stack</p>
+            </div>
+            <ContainerButton>
+              <ButtonCv>Download CV</ButtonCv>
+              <ButtonContactMe>Entre em contato</ButtonContactMe>
+            </ContainerButton>
+          </ContainerName>
 
-      <ContainerMain>
-        <DivFirst>
-          <div>
-            <h2>Olá, Sou Caio Miranda</h2>
-            <h1>Desenvolvedor Full-Stack</h1>
-            <h3>React & Node.js</h3>
-          </div>
+          <img src={CaioImg} alt="imagem-de-perfil" />
+        </DivInfo>
 
-          <SocialLinks>
-            <a
-              href="https://www.linkedin.com/in/caio-miranda-ofc/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={LinkedinImg} />
-            </a>
-            <a
-              href="https://github.com/CaioMiranda12?tab=repositories"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={GithubImg} />
-            </a>
-          </SocialLinks>
-        </DivFirst>
+        <DivAbout>
+          <h2>Sobre</h2>
+          <p>
+            Me chamo Caio, sou um programador <span>Full-Stack,</span>
+            trabalhando principalmente com{' '}
+            <span>
+              React, Node.js, CSS, HTML, API REST, PostgresSQL e MongoDB
+            </span>
+            . Estudo desenvolvimento web no curso DevClub há mais de um ano. A
+            partir da integração de tais tecnologias, construí um site completo
+            de uma hamburgueria, com sistema de login, pedidos, ofertas e
+            carrinho, que inclusive também criei a API.
+          </p>
+        </DivAbout>
+      </div>
 
-        {/* <img src={Programmer} /> */}
-      </ContainerMain>
-
-      <AboutMe />
+      <Skills />
 
       <Projetos />
-    </ContainerAll>
+    </ContainerMain>
   )
 }

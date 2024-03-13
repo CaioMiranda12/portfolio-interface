@@ -1,96 +1,117 @@
 import styled from 'styled-components'
 
-export const ContainerAll = styled.div``
-
-export const DivFirst = styled.div``
-
 export const ContainerMain = styled.div`
-  /* background-color: #171717; */
-  background-image: radial-gradient(
-    circle at 50% -20.71%,
-    #7b7b6f 0,
-    #787666 8.33%,
-    #75705d 16.67%,
-    #736953 25%,
-    #706249 33.33%,
-    #6e593e 41.67%,
-    #6b5033 50%,
-    #684629 58.33%,
-    #663d22 66.67%,
-    #65341c 75%,
-    #632b18 83.33%,
-    #622217 91.67%,
-    #601817 100%
-  );
-  height: 92vh;
+  background-color: #13131f;
+  height: 90vh;
+  padding-top: 100px;
+`
+
+export const DivInfo = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  height: 50%;
 
   div {
-    max-width: 100vw;
-
     h2 {
-      color: #fff;
-      font-size: 40px;
+      font-size: 35px;
       font-weight: 500;
-      text-align: center;
-    }
-
-    h2:hover {
-      -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-      transform: scale(1.1);
-      transition: 0.5s;
+      color: #f9f9f9;
     }
 
     h1 {
-      font-size: 65px;
-      color: #f5a940;
-      text-align: center;
-    }
-
-    h1:hover {
-      -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-      transform: scale(1.1);
-      transition: 0.5s;
-    }
-
-    h3 {
-      color: #fbead5;
       font-size: 35px;
-      transition: 0.5s;
-      text-align: center;
+      font-weight: 500;
+      color: #8257e6;
     }
 
-    h3:hover {
-      -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-      transform: scale(1.1);
+    p {
+      color: #828282;
+      font-size: 18px;
+      font-weight: 500;
     }
-  }
-`
-
-export const SocialLinks = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 30px;
-
-  a {
-    cursor: pointer;
-  }
-
-  a:hover {
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
-    transition: 0.3s;
   }
 
   img {
-    width: 60px;
+    width: 300px;
+    border-radius: 150px;
+  }
+`
+
+export const ContainerName = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
+
+export const ContainerButton = styled.div`
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+
+  a:hover {
+    background-image: linear-gradient(
+      90deg,
+      rgba(121, 48, 190, 0.648) 100%,
+      rgba(130, 87, 230, 0.8) 0.2%
+    );
+    transform: scale(0.95);
+  }
+`
+
+export const ButtonCv = styled.a`
+  font-size: 13px;
+  width: 140px;
+  font-weight: 500;
+  color: #f9f9f9;
+  padding: 7px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(130, 87, 230, 0.8) 0.2%,
+    rgba(121, 48, 190, 0.648) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+`
+
+export const ButtonContactMe = styled.a`
+  font-size: 13px;
+  width: 160px;
+  border: 0.1rem solid #8257e6;
+  font-weight: 500;
+  color: #f9f9f9;
+  padding: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+`
+
+export const DivAbout = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  padding-top: 50px;
+
+  h2 {
+    font-size: 30px;
+    color: #f9f9f9;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  p {
+    color: #828282;
+    font-size: 17px;
+    text-align: center;
+    width: 55%;
+    line-height: 180%;
   }
 `

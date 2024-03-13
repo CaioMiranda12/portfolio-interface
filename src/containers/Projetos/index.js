@@ -4,16 +4,19 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import React from 'react'
+import Carousel from 'react-elastic-carousel'
+import { useNavigate } from 'react-router-dom'
 
 import CodeBurger from '../../assets/codeburger.png'
-import DevHamburgueria from '../../assets/devhamburger.png'
+import SiteDireito from '../../assets/direito-site.png'
 import Tempo from '../../assets/tempo.png'
 import {
   ContainerMain,
   InfoContainer,
   ContainerProjects,
-  InfoProjectDiv,
-  CardButtons
+  DivProject,
+  DivButtons,
+  DivOpenButton
 } from './styles'
 
 export function Projetos() {
@@ -26,71 +29,75 @@ export function Projetos() {
         </InfoContainer>
 
         <ContainerProjects>
-          <InfoProjectDiv>
-            <img src={CodeBurger} alt="codeburger-img" />
-            <div>
-              <h2>CodeBurger</h2>
-              <p>
-                Site completo de Hamburgueria, com sistema de login, pedidos e
-                carrinho, com API própria
-              </p>
-            </div>
-
-            <CardButtons>
+          <Carousel itemsToShow={3}>
+            <DivProject image={CodeBurger}>
               <div>
-                <p>React</p>
-                <p>Node.js</p>
-                <p>HTML</p>
-                <p>CSS</p>
+                <h1>CodeBurger (FrontEnd)</h1>
+                <DivButtons>
+                  <p>React</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>Javascript</p>
+                </DivButtons>
+
+                <DivOpenButton>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7142666715657637890/"
+                    rel="noreferrer"
+                  >
+                    Abrir
+                  </a>
+                </DivOpenButton>
               </div>
+            </DivProject>
 
-              <button>Abrir</button>
-            </CardButtons>
-          </InfoProjectDiv>
-
-          <InfoProjectDiv>
-            <img src={CodeBurger} alt="codeburger-img" />
-            <div>
-              <h2>DevBurger2</h2>
-              <p>
-                Site completo de Hamburgueria, com sistema de login, pedidos e
-                carrinho, com API própria
-              </p>
-            </div>
-
-            <CardButtons>
+            <DivProject image={CodeBurger}>
               <div>
-                <p>React</p>
-                <p>Node.js</p>
-                <p>HTML</p>
-                <p>CSS</p>
+                <h1>CodeBurger (BackEnd)</h1>
+                <DivButtons>
+                  <p>Node.js</p>
+                  <p>Express</p>
+                  <p>ORM</p>
+                  <p>PostgreSQL</p>
+                  <p>MongoDB</p>
+                </DivButtons>
+
+                <DivOpenButton>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7173120016043782144/"
+                    rel="noreferrer"
+                  >
+                    Abrir
+                  </a>
+                </DivOpenButton>
               </div>
+            </DivProject>
 
-              <button>Abrir</button>
-            </CardButtons>
-          </InfoProjectDiv>
-
-          <InfoProjectDiv>
-            <img src={CodeBurger} alt="codeburger-img" />
-            <div>
-              <h2>Previsão do Tempo</h2>
-              <p>
-                Site completo de Hamburgueria, com sistema de login, pedidos e
-                carrinho, com API própria
-              </p>
-            </div>
-
-            <CardButtons>
+            <DivProject image={SiteDireito}>
               <div>
-                <p>React</p>
-                <p>Node.js</p>
-                <p>HTML</p>
-                <p>CSS</p>
-              </div>
+                <h1>Site de Estudo - Direito</h1>
+                <DivButtons>
+                  <p>React</p>
+                  <p>Styled-Components</p>
+                  <p>Javascript</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </DivButtons>
 
-              <button>Abrir</button>
-            </CardButtons>
-          </InfoProjectDiv>
+                <DivOpenButton>
+                  <a
+                    target="_blank"
+                    href="https://direito-adm-2.vercel.app/"
+                    rel="noreferrer"
+                  >
+                    Abrir
+                  </a>
+                </DivOpenButton>
+              </div>
+            </DivProject>
+          </Carousel>
         </ContainerProjects>
       </ContainerMain>
     </div>
