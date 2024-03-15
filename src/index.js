@@ -12,6 +12,6 @@ root.render(
     <GlobalStyle />
 
     <Header />
-    <MyRoutes />
+    <Home />
   </React.StrictMode>
 )

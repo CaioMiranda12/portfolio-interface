@@ -16,10 +16,25 @@ function Header() {
         <span>Caio</span> Miranda
       </button>
       <HeaderLinks>
-        <a>Home</a>
+        {/* <a>Home</a>
         <a>Sobre</a>
         <a>Projetos</a>
-        <a>Contato</a>
+        <a>Contato</a> */}
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/caio-miranda-ofc/"
+          rel="noreferrer"
+        >
+          <img src={LinkedinImg} alt="img-linkedin" />
+        </a>
+
+        <a
+          target="_blank"
+          href="https://github.com/CaioMiranda12"
+          rel="noreferrer"
+        >
+          <img src={GithubImg} alt="img-github" />
+        </a>
       </HeaderLinks>
     </ContainerMain>
   )

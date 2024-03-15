@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Cv from '../../assets/cv2024.pdf'
 import GithubImg from '../../assets/github-white.png'
 import imgPessoa from '../../assets/img-principal.svg'
 import LinkedinImg from '../../assets/linkedin-white.png'
@@ -29,8 +30,15 @@ export function Home() {
               <p>Desenvolvedor Full-Stack</p>
             </div>
             <ContainerButton>
-              <ButtonCv>Download CV</ButtonCv>
-              <ButtonContactMe>Entre em contato</ButtonContactMe>
+              <ButtonCv download href="../../assets/cv2024.pdf">
+                Download CV
+              </ButtonCv>
+              <ButtonContactMe
+                target="_blank"
+                href="https://www.linkedin.com/in/caio-miranda-ofc/"
+              >
+                Entre em contato
+              </ButtonContactMe>
             </ContainerButton>
           </ContainerName>
 

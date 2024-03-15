@@ -63,7 +63,7 @@ export const ButtonCv = styled.a`
   width: 140px;
   font-weight: 500;
   color: #f9f9f9;
-  padding: 7px;
+  padding: 10px;
   background-image: linear-gradient(
     90deg,
     rgba(130, 87, 230, 0.8) 0.2%,
@@ -75,6 +75,7 @@ export const ButtonCv = styled.a`
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 `
 
 export const ButtonContactMe = styled.a`
@@ -83,7 +84,7 @@ export const ButtonContactMe = styled.a`
   border: 0.1rem solid #8257e6;
   font-weight: 500;
   color: #f9f9f9;
-  padding: 7px;
+  padding: 10px;
 
   display: flex;
   align-items: center;
@@ -91,6 +92,7 @@ export const ButtonContactMe = styled.a`
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 `
 
 export const DivAbout = styled.div`

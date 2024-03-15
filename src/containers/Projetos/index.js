@@ -1,13 +1,9 @@
-import { CardActionArea, CardActions } from '@mui/material'
-import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
-import Typography from '@mui/material/Typography'
 import React from 'react'
 import Carousel from 'react-elastic-carousel'
-import { useNavigate } from 'react-router-dom'
 
 import CodeBurger from '../../assets/codeburger.png'
+import ConversorMoedas from '../../assets/conversormoedas.png'
+import DevBurger from '../../assets/devhamburger.png'
 import SiteDireito from '../../assets/direito-site.png'
 import Tempo from '../../assets/tempo.png'
 import {
@@ -32,33 +28,13 @@ export function Projetos() {
           <Carousel itemsToShow={3}>
             <DivProject image={CodeBurger}>
               <div>
-                <h1>CodeBurger (FrontEnd)</h1>
+                <h1>CodeBurger</h1>
                 <DivButtons>
                   <p>React</p>
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>Javascript</p>
-                </DivButtons>
-
-                <DivOpenButton>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/feed/update/urn:li:activity:7142666715657637890/"
-                    rel="noreferrer"
-                  >
-                    Abrir
-                  </a>
-                </DivOpenButton>
-              </div>
-            </DivProject>
-
-            <DivProject image={CodeBurger}>
-              <div>
-                <h1>CodeBurger (BackEnd)</h1>
-                <DivButtons>
                   <p>Node.js</p>
                   <p>Express</p>
-                  <p>ORM</p>
+
+                  <p>Docker</p>
                   <p>PostgreSQL</p>
                   <p>MongoDB</p>
                 </DivButtons>
@@ -66,7 +42,7 @@ export function Projetos() {
                 <DivOpenButton>
                   <a
                     target="_blank"
-                    href="https://www.linkedin.com/feed/update/urn:li:activity:7173120016043782144/"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7174057842935513091/"
                     rel="noreferrer"
                   >
                     Abrir
@@ -90,6 +66,69 @@ export function Projetos() {
                   <a
                     target="_blank"
                     href="https://direito-adm-2.vercel.app/"
+                    rel="noreferrer"
+                  >
+                    Abrir
+                  </a>
+                </DivOpenButton>
+              </div>
+            </DivProject>
+
+            <DivProject image={DevBurger}>
+              <div>
+                <h1>DevBurger</h1>
+                <DivButtons>
+                  <p>Javascript</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </DivButtons>
+
+                <DivOpenButton>
+                  <a
+                    target="_blank"
+                    href="https://caiomiranda12.github.io/DevHamburgueria/"
+                    rel="noreferrer"
+                  >
+                    Abrir
+                  </a>
+                </DivOpenButton>
+              </div>
+            </DivProject>
+
+            <DivProject image={Tempo}>
+              <div>
+                <h1>Previsão do Tempo</h1>
+                <DivButtons>
+                  <p>Javascript</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </DivButtons>
+
+                <DivOpenButton>
+                  <a
+                    target="_blank"
+                    href="https://caiomiranda12.github.io/PrevisaoDoTempo/"
+                    rel="noreferrer"
+                  >
+                    Abrir
+                  </a>
+                </DivOpenButton>
+              </div>
+            </DivProject>
+
+            <DivProject image={ConversorMoedas}>
+              <div>
+                <h1>Conversor de Moedas</h1>
+                <DivButtons>
+                  <p>Javascript</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </DivButtons>
+
+                <DivOpenButton>
+                  <a
+                    target="_blank"
+                    href="https://caiomiranda12.github.io/Conversor-de-Moedas/"
                     rel="noreferrer"
                   >
                     Abrir
