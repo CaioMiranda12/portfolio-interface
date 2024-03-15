@@ -30,7 +30,10 @@ export function Home() {
               <p>Desenvolvedor Full-Stack</p>
             </div>
             <ContainerButton>
-              <ButtonCv download href="../../assets/cv2024.pdf">
+              <ButtonCv
+                target="_blank"
+                href="https://drive.google.com/file/d/1jHQLuMdMekve1fyzwHQUDpzyeDxw6T8J/view?usp=sharing"
+              >
                 Download CV
               </ButtonCv>
               <ButtonContactMe
