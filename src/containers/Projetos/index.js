@@ -3,6 +3,7 @@ import Carousel from 'react-elastic-carousel'
 
 import CodeBurger from '../../assets/codeburger.png'
 import ConversorMoedas from '../../assets/conversormoedas.png'
+import DevBills from '../../assets/devb.png'
 import DevBurger from '../../assets/devhamburger.png'
 import SiteDireito from '../../assets/direito-site.png'
 import Tempo from '../../assets/tempo.png'
@@ -43,6 +44,30 @@ export function Projetos() {
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/feed/update/urn:li:activity:7174057842935513091/"
+                    rel="noreferrer"
+                  >
+                    Abrir
+                  </a>
+                </DivOpenButton>
+              </div>
+            </DivProject>
+
+            <DivProject image={DevBills}>
+              <div>
+                <h1>DevBills</h1>
+                <DivButtons>
+                  <p>React</p>
+                  <p>Typescript</p>
+                  <p>Vite</p>
+                  <p>Radix-UI</p>
+                  <p>Javascript</p>
+                  <p>Styled-components</p>
+                </DivButtons>
+
+                <DivOpenButton>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7176993607889862656/"
                     rel="noreferrer"
                   >
                     Abrir
