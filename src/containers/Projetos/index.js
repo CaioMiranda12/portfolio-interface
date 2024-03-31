@@ -92,7 +92,7 @@ export function Projetos() {
                 <DivOpenButton>
                   <a
                     target="_blank"
-                    href="https://www.linkedin.com/feed/update/urn:li:activity:7176993607889862656/"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7180007609037373441/"
                     rel="noreferrer"
                   >
                     Abrir
